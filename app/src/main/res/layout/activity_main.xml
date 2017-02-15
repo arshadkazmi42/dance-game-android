@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="@color/transparentBlackBg"
+            android:gravity="center"
+            >
+
+            <com.arshad.dancegame.util.widgets.MontRegularTextView
+                android:id="@+id/tvHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Dance Game (Rules)"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/textColorWhite"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.arshad.dancegame.util.widgets.MontLightTextView
+                android:id="@+id/tvRule1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1. Maximum 1 touche is allowed by device"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/textColorWhite"
+                android:gravity="center_horizontal"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/tvHeader"
+                />
+
+            <com.arshad.dancegame.util.widgets.MontLightTextView
+                android:id="@+id/tvRule2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="2. Player can touch maximum 1 finger at a time"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/textColorWhite"
+                android:gravity="center_horizontal"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tvRule1"
+                />
+
+            <com.arshad.dancegame.util.widgets.MontRegularTextView
+                android:id="@+id/tvGameOver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Game Over When?"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/textColorWhite"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/tvRule2"
+                />
+
+            <com.arshad.dancegame.util.widgets.MontLightTextView
+                android:id="@+id/tvGameRule1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1. Player clicks on the Wrong tile"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/textColorWhite"
+                android:gravity="center_horizontal"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tvGameOver"
+                />
+
+            <com.arshad.dancegame.util.widgets.MontLightTextView
+                android:id="@+id/tvGameRule2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1. Player lift his finger from previously selected tile"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/textColorWhite"
+                android:gravity="center_horizontal"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tvGameRule1"
+                android:visibility="gone"
+                />
+
+            <com.arshad.dancegame.util.widgets.MontEditText
+                android:id="@+id/etNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter value for N"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:layout_below="@+id/tvGameRule2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:theme="@style/Theme.App.Base"
+                android:textColor="@color/textColorWhite"
+                android:textColorHint="@color/whitishGray"
+                />
+
+            <com.arshad.dancegame.util.widgets.MontRegularTextView
+                android:id="@+id/tvStartGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Start Game"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/textColorWhite"
+                android:padding="12dp"
+                android:background="@drawable/bg_border_primary_selector"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:layout_below="@+id/etNumber"
+                android:textSize="15sp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
